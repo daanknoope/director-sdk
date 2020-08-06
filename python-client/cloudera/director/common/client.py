@@ -306,7 +306,7 @@ class ApiClient(object):
                  _preload_content=True, _request_timeout=None):
         """Makes the HTTP request (synchronous) and returns deserialized data.
 
-        To make an async_call request, set the async_call parameter.
+        To make an asynchronous request, set the async_call parameter.
 
         :param resource_path: Path to method endpoint.
         :param method: Method to call.

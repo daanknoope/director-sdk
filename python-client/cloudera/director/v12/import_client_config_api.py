@@ -46,8 +46,8 @@ class ImportClientConfigApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.convert_simple(simple_client_config, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.convert_simple(simple_client_config, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -58,7 +58,7 @@ class ImportClientConfigApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.convert_simple_with_http_info(simple_client_config, **kwargs)  # noqa: E501
         else:
             (data) = self.convert_simple_with_http_info(simple_client_config, **kwargs)  # noqa: E501
@@ -69,8 +69,8 @@ class ImportClientConfigApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.convert_simple_with_http_info(simple_client_config, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.convert_simple_with_http_info(simple_client_config, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -82,7 +82,7 @@ class ImportClientConfigApi(object):
         """
 
         all_params = ['simple_client_config', 'include_origin_comments']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -138,7 +138,7 @@ class ImportClientConfigApi(object):
             files=local_var_files,
             response_type='str',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.v12.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -150,8 +150,8 @@ class ImportClientConfigApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.import_client_config(client_config, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.import_client_config(client_config, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -164,7 +164,7 @@ class ImportClientConfigApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.import_client_config_with_http_info(client_config, **kwargs)  # noqa: E501
         else:
             (data) = self.import_client_config_with_http_info(client_config, **kwargs)  # noqa: E501
@@ -175,8 +175,8 @@ class ImportClientConfigApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.import_client_config_with_http_info(client_config, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.import_client_config_with_http_info(client_config, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -190,7 +190,7 @@ class ImportClientConfigApi(object):
         """
 
         all_params = ['client_config', 'cluster_name', 'deployment_name', 'environment_name']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -250,7 +250,7 @@ class ImportClientConfigApi(object):
             files=local_var_files,
             response_type='ImportResult',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.v12.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -262,8 +262,8 @@ class ImportClientConfigApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.validate(client_config, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.validate(client_config, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -276,7 +276,7 @@ class ImportClientConfigApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.validate_with_http_info(client_config, **kwargs)  # noqa: E501
         else:
             (data) = self.validate_with_http_info(client_config, **kwargs)  # noqa: E501
@@ -287,8 +287,8 @@ class ImportClientConfigApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.validate_with_http_info(client_config, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.validate_with_http_info(client_config, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -302,7 +302,7 @@ class ImportClientConfigApi(object):
         """
 
         all_params = ['client_config', 'cluster_name', 'deployment_name', 'environment_name']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -362,7 +362,7 @@ class ImportClientConfigApi(object):
             files=local_var_files,
             response_type='ValidationResult',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.v12.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),

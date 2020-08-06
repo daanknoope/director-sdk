@@ -46,8 +46,8 @@ class UsersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create(user, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.create(user, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -57,7 +57,7 @@ class UsersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.create_with_http_info(user, **kwargs)  # noqa: E501
         else:
             (data) = self.create_with_http_info(user, **kwargs)  # noqa: E501
@@ -68,8 +68,8 @@ class UsersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_with_http_info(user, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.create_with_http_info(user, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -80,7 +80,7 @@ class UsersApi(object):
         """
 
         all_params = ['user']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -130,7 +130,7 @@ class UsersApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.v9.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -142,8 +142,8 @@ class UsersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.current_redacted(async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.current_redacted(async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -152,7 +152,7 @@ class UsersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.current_redacted_with_http_info(**kwargs)  # noqa: E501
         else:
             (data) = self.current_redacted_with_http_info(**kwargs)  # noqa: E501
@@ -163,8 +163,8 @@ class UsersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.current_redacted_with_http_info(async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.current_redacted_with_http_info(async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -174,7 +174,7 @@ class UsersApi(object):
         """
 
         all_params = []  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -218,7 +218,7 @@ class UsersApi(object):
             files=local_var_files,
             response_type='User',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.v9.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -230,8 +230,8 @@ class UsersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete(username, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.delete(username, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -241,7 +241,7 @@ class UsersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.delete_with_http_info(username, **kwargs)  # noqa: E501
         else:
             (data) = self.delete_with_http_info(username, **kwargs)  # noqa: E501
@@ -252,8 +252,8 @@ class UsersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_with_http_info(username, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.delete_with_http_info(username, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -264,7 +264,7 @@ class UsersApi(object):
         """
 
         all_params = ['username']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -316,7 +316,7 @@ class UsersApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.v9.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -328,8 +328,8 @@ class UsersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_redacted(username, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_redacted(username, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -339,7 +339,7 @@ class UsersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.get_redacted_with_http_info(username, **kwargs)  # noqa: E501
         else:
             (data) = self.get_redacted_with_http_info(username, **kwargs)  # noqa: E501
@@ -350,8 +350,8 @@ class UsersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_redacted_with_http_info(username, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_redacted_with_http_info(username, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -362,7 +362,7 @@ class UsersApi(object):
         """
 
         all_params = ['username']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -414,7 +414,7 @@ class UsersApi(object):
             files=local_var_files,
             response_type='User',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.v9.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -426,8 +426,8 @@ class UsersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.list(async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.list(async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -436,7 +436,7 @@ class UsersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.list_with_http_info(**kwargs)  # noqa: E501
         else:
             (data) = self.list_with_http_info(**kwargs)  # noqa: E501
@@ -447,8 +447,8 @@ class UsersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.list_with_http_info(async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.list_with_http_info(async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -458,7 +458,7 @@ class UsersApi(object):
         """
 
         all_params = []  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -502,7 +502,7 @@ class UsersApi(object):
             files=local_var_files,
             response_type='list[str]',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.v9.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -514,8 +514,8 @@ class UsersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update(username, user, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.update(username, user, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -526,7 +526,7 @@ class UsersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.update_with_http_info(username, user, **kwargs)  # noqa: E501
         else:
             (data) = self.update_with_http_info(username, user, **kwargs)  # noqa: E501
@@ -537,8 +537,8 @@ class UsersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_with_http_info(username, user, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.update_with_http_info(username, user, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -550,7 +550,7 @@ class UsersApi(object):
         """
 
         all_params = ['username', 'user']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -608,7 +608,7 @@ class UsersApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.v9.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -620,8 +620,8 @@ class UsersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_password(username, passwords, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.update_password(username, passwords, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -632,7 +632,7 @@ class UsersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.update_password_with_http_info(username, passwords, **kwargs)  # noqa: E501
         else:
             (data) = self.update_password_with_http_info(username, passwords, **kwargs)  # noqa: E501
@@ -643,8 +643,8 @@ class UsersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_password_with_http_info(username, passwords, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.update_password_with_http_info(username, passwords, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -656,7 +656,7 @@ class UsersApi(object):
         """
 
         all_params = ['username', 'passwords']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -712,7 +712,7 @@ class UsersApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.v9.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),

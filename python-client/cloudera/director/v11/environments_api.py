@@ -46,8 +46,8 @@ class EnvironmentsApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create(environment, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.create(environment, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -57,7 +57,7 @@ class EnvironmentsApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.create_with_http_info(environment, **kwargs)  # noqa: E501
         else:
             (data) = self.create_with_http_info(environment, **kwargs)  # noqa: E501
@@ -68,8 +68,8 @@ class EnvironmentsApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_with_http_info(environment, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.create_with_http_info(environment, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -80,7 +80,7 @@ class EnvironmentsApi(object):
         """
 
         all_params = ['environment']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -130,7 +130,7 @@ class EnvironmentsApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.v11.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -142,8 +142,8 @@ class EnvironmentsApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete(name, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.delete(name, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -153,7 +153,7 @@ class EnvironmentsApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.delete_with_http_info(name, **kwargs)  # noqa: E501
         else:
             (data) = self.delete_with_http_info(name, **kwargs)  # noqa: E501
@@ -164,8 +164,8 @@ class EnvironmentsApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_with_http_info(name, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.delete_with_http_info(name, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -176,7 +176,7 @@ class EnvironmentsApi(object):
         """
 
         all_params = ['name']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -226,7 +226,7 @@ class EnvironmentsApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.v11.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -238,8 +238,8 @@ class EnvironmentsApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_redacted(name, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_redacted(name, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -249,7 +249,7 @@ class EnvironmentsApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.get_redacted_with_http_info(name, **kwargs)  # noqa: E501
         else:
             (data) = self.get_redacted_with_http_info(name, **kwargs)  # noqa: E501
@@ -260,8 +260,8 @@ class EnvironmentsApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_redacted_with_http_info(name, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_redacted_with_http_info(name, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -272,7 +272,7 @@ class EnvironmentsApi(object):
         """
 
         all_params = ['name']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -322,7 +322,7 @@ class EnvironmentsApi(object):
             files=local_var_files,
             response_type='Environment',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.v11.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -334,8 +334,8 @@ class EnvironmentsApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.list(async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.list(async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -344,7 +344,7 @@ class EnvironmentsApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.list_with_http_info(**kwargs)  # noqa: E501
         else:
             (data) = self.list_with_http_info(**kwargs)  # noqa: E501
@@ -355,8 +355,8 @@ class EnvironmentsApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.list_with_http_info(async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.list_with_http_info(async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -366,7 +366,7 @@ class EnvironmentsApi(object):
         """
 
         all_params = []  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -410,7 +410,7 @@ class EnvironmentsApi(object):
             files=local_var_files,
             response_type='list[str]',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.v11.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -422,8 +422,8 @@ class EnvironmentsApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update(name, environment, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.update(name, environment, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -434,7 +434,7 @@ class EnvironmentsApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.update_with_http_info(name, environment, **kwargs)  # noqa: E501
         else:
             (data) = self.update_with_http_info(name, environment, **kwargs)  # noqa: E501
@@ -445,8 +445,8 @@ class EnvironmentsApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_with_http_info(name, environment, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.update_with_http_info(name, environment, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -458,7 +458,7 @@ class EnvironmentsApi(object):
         """
 
         all_params = ['name', 'environment']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -514,7 +514,7 @@ class EnvironmentsApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.v11.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -526,8 +526,8 @@ class EnvironmentsApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_provider_credentials(name, credentials, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.update_provider_credentials(name, credentials, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -538,7 +538,7 @@ class EnvironmentsApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.update_provider_credentials_with_http_info(name, credentials, **kwargs)  # noqa: E501
         else:
             (data) = self.update_provider_credentials_with_http_info(name, credentials, **kwargs)  # noqa: E501
@@ -549,8 +549,8 @@ class EnvironmentsApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_provider_credentials_with_http_info(name, credentials, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.update_provider_credentials_with_http_info(name, credentials, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -562,7 +562,7 @@ class EnvironmentsApi(object):
         """
 
         all_params = ['name', 'credentials']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -618,7 +618,7 @@ class EnvironmentsApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.v11.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),

@@ -46,8 +46,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.collect_diagnostic_data(environment, deployment, cluster, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.collect_diagnostic_data(environment, deployment, cluster, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -59,7 +59,7 @@ class ClustersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.collect_diagnostic_data_with_http_info(environment, deployment, cluster, **kwargs)  # noqa: E501
         else:
             (data) = self.collect_diagnostic_data_with_http_info(environment, deployment, cluster, **kwargs)  # noqa: E501
@@ -70,8 +70,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.collect_diagnostic_data_with_http_info(environment, deployment, cluster, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.collect_diagnostic_data_with_http_info(environment, deployment, cluster, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -84,7 +84,7 @@ class ClustersApi(object):
         """
 
         all_params = ['environment', 'deployment', 'cluster']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -146,7 +146,7 @@ class ClustersApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.d6_0.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -158,8 +158,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create(environment, deployment, cluster_template, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.create(environment, deployment, cluster_template, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -171,7 +171,7 @@ class ClustersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.create_with_http_info(environment, deployment, cluster_template, **kwargs)  # noqa: E501
         else:
             (data) = self.create_with_http_info(environment, deployment, cluster_template, **kwargs)  # noqa: E501
@@ -182,8 +182,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_with_http_info(environment, deployment, cluster_template, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.create_with_http_info(environment, deployment, cluster_template, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -196,7 +196,7 @@ class ClustersApi(object):
         """
 
         all_params = ['environment', 'deployment', 'cluster_template']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -258,7 +258,7 @@ class ClustersApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.d6_0.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -270,8 +270,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete(environment, deployment, cluster, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.delete(environment, deployment, cluster, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -283,7 +283,7 @@ class ClustersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.delete_with_http_info(environment, deployment, cluster, **kwargs)  # noqa: E501
         else:
             (data) = self.delete_with_http_info(environment, deployment, cluster, **kwargs)  # noqa: E501
@@ -294,8 +294,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_with_http_info(environment, deployment, cluster, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.delete_with_http_info(environment, deployment, cluster, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -308,7 +308,7 @@ class ClustersApi(object):
         """
 
         all_params = ['environment', 'deployment', 'cluster']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -370,7 +370,7 @@ class ClustersApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.d6_0.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -382,8 +382,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.export_cluster_configuration(environment, deployment, cluster, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.export_cluster_configuration(environment, deployment, cluster, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -395,7 +395,7 @@ class ClustersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.export_cluster_configuration_with_http_info(environment, deployment, cluster, **kwargs)  # noqa: E501
         else:
             (data) = self.export_cluster_configuration_with_http_info(environment, deployment, cluster, **kwargs)  # noqa: E501
@@ -406,8 +406,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.export_cluster_configuration_with_http_info(environment, deployment, cluster, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.export_cluster_configuration_with_http_info(environment, deployment, cluster, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -420,7 +420,7 @@ class ClustersApi(object):
         """
 
         all_params = ['environment', 'deployment', 'cluster']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -482,7 +482,7 @@ class ClustersApi(object):
             files=local_var_files,
             response_type='str',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.d6_0.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -494,8 +494,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_administration_settings(environment, deployment, cluster, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_administration_settings(environment, deployment, cluster, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -507,7 +507,7 @@ class ClustersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.get_administration_settings_with_http_info(environment, deployment, cluster, **kwargs)  # noqa: E501
         else:
             (data) = self.get_administration_settings_with_http_info(environment, deployment, cluster, **kwargs)  # noqa: E501
@@ -518,8 +518,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_administration_settings_with_http_info(environment, deployment, cluster, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_administration_settings_with_http_info(environment, deployment, cluster, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -532,7 +532,7 @@ class ClustersApi(object):
         """
 
         all_params = ['environment', 'deployment', 'cluster']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -594,7 +594,7 @@ class ClustersApi(object):
             files=local_var_files,
             response_type='ClusterAdministrationSettings',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.d6_0.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -606,8 +606,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_history(environment, deployment, cluster, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_history(environment, deployment, cluster, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -621,7 +621,7 @@ class ClustersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.get_history_with_http_info(environment, deployment, cluster, **kwargs)  # noqa: E501
         else:
             (data) = self.get_history_with_http_info(environment, deployment, cluster, **kwargs)  # noqa: E501
@@ -632,8 +632,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_history_with_http_info(environment, deployment, cluster, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_history_with_http_info(environment, deployment, cluster, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -648,7 +648,7 @@ class ClustersApi(object):
         """
 
         all_params = ['environment', 'deployment', 'cluster', 'num_events', 'page']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -714,7 +714,7 @@ class ClustersApi(object):
             files=local_var_files,
             response_type='list[ClusterUpdateEventSummary]',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.d6_0.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -726,8 +726,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_metrics(environment, deployment, cluster, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_metrics(environment, deployment, cluster, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -739,7 +739,7 @@ class ClustersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.get_metrics_with_http_info(environment, deployment, cluster, **kwargs)  # noqa: E501
         else:
             (data) = self.get_metrics_with_http_info(environment, deployment, cluster, **kwargs)  # noqa: E501
@@ -750,8 +750,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_metrics_with_http_info(environment, deployment, cluster, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_metrics_with_http_info(environment, deployment, cluster, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -764,7 +764,7 @@ class ClustersApi(object):
         """
 
         all_params = ['environment', 'deployment', 'cluster']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -826,7 +826,7 @@ class ClustersApi(object):
             files=local_var_files,
             response_type='Metrics',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.d6_0.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -838,8 +838,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_redacted(environment, deployment, cluster, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_redacted(environment, deployment, cluster, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -851,7 +851,7 @@ class ClustersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.get_redacted_with_http_info(environment, deployment, cluster, **kwargs)  # noqa: E501
         else:
             (data) = self.get_redacted_with_http_info(environment, deployment, cluster, **kwargs)  # noqa: E501
@@ -862,8 +862,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_redacted_with_http_info(environment, deployment, cluster, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_redacted_with_http_info(environment, deployment, cluster, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -876,7 +876,7 @@ class ClustersApi(object):
         """
 
         all_params = ['environment', 'deployment', 'cluster']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -938,7 +938,7 @@ class ClustersApi(object):
             files=local_var_files,
             response_type='Cluster',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.d6_0.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -950,8 +950,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_status(environment, deployment, cluster, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_status(environment, deployment, cluster, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -963,7 +963,7 @@ class ClustersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.get_status_with_http_info(environment, deployment, cluster, **kwargs)  # noqa: E501
         else:
             (data) = self.get_status_with_http_info(environment, deployment, cluster, **kwargs)  # noqa: E501
@@ -974,8 +974,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_status_with_http_info(environment, deployment, cluster, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_status_with_http_info(environment, deployment, cluster, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -988,7 +988,7 @@ class ClustersApi(object):
         """
 
         all_params = ['environment', 'deployment', 'cluster']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -1050,7 +1050,7 @@ class ClustersApi(object):
             files=local_var_files,
             response_type='Status',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.d6_0.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -1062,8 +1062,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_template_redacted(environment, deployment, cluster, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_template_redacted(environment, deployment, cluster, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1075,7 +1075,7 @@ class ClustersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.get_template_redacted_with_http_info(environment, deployment, cluster, **kwargs)  # noqa: E501
         else:
             (data) = self.get_template_redacted_with_http_info(environment, deployment, cluster, **kwargs)  # noqa: E501
@@ -1086,8 +1086,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_template_redacted_with_http_info(environment, deployment, cluster, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_template_redacted_with_http_info(environment, deployment, cluster, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1100,7 +1100,7 @@ class ClustersApi(object):
         """
 
         all_params = ['environment', 'deployment', 'cluster']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -1162,7 +1162,7 @@ class ClustersApi(object):
             files=local_var_files,
             response_type='ClusterTemplate',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.d6_0.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -1174,8 +1174,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.list(environment, deployment, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.list(environment, deployment, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1186,7 +1186,7 @@ class ClustersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.list_with_http_info(environment, deployment, **kwargs)  # noqa: E501
         else:
             (data) = self.list_with_http_info(environment, deployment, **kwargs)  # noqa: E501
@@ -1197,8 +1197,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.list_with_http_info(environment, deployment, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.list_with_http_info(environment, deployment, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1210,7 +1210,7 @@ class ClustersApi(object):
         """
 
         all_params = ['environment', 'deployment']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -1266,7 +1266,7 @@ class ClustersApi(object):
             files=local_var_files,
             response_type='list[str]',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.d6_0.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -1278,8 +1278,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update(environment, deployment, cluster, desired, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.update(environment, deployment, cluster, desired, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1292,7 +1292,7 @@ class ClustersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.update_with_http_info(environment, deployment, cluster, desired, **kwargs)  # noqa: E501
         else:
             (data) = self.update_with_http_info(environment, deployment, cluster, desired, **kwargs)  # noqa: E501
@@ -1303,8 +1303,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_with_http_info(environment, deployment, cluster, desired, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.update_with_http_info(environment, deployment, cluster, desired, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1318,7 +1318,7 @@ class ClustersApi(object):
         """
 
         all_params = ['environment', 'deployment', 'cluster', 'desired']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -1386,7 +1386,7 @@ class ClustersApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.d6_0.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -1398,8 +1398,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_administration_settings(environment, deployment, cluster, administration_settings, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.update_administration_settings(environment, deployment, cluster, administration_settings, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1412,7 +1412,7 @@ class ClustersApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.update_administration_settings_with_http_info(environment, deployment, cluster, administration_settings, **kwargs)  # noqa: E501
         else:
             (data) = self.update_administration_settings_with_http_info(environment, deployment, cluster, administration_settings, **kwargs)  # noqa: E501
@@ -1423,8 +1423,8 @@ class ClustersApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_administration_settings_with_http_info(environment, deployment, cluster, administration_settings, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.update_administration_settings_with_http_info(environment, deployment, cluster, administration_settings, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -1438,7 +1438,7 @@ class ClustersApi(object):
         """
 
         all_params = ['environment', 'deployment', 'cluster', 'administration_settings']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -1506,7 +1506,7 @@ class ClustersApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.d6_0.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),

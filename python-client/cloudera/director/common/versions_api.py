@@ -45,8 +45,8 @@ class VersionsApi(object):
         """get_latest_version  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_latest_version(async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_latest_version(async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -55,7 +55,7 @@ class VersionsApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.get_latest_version_with_http_info(**kwargs)  # noqa: E501
         else:
             (data) = self.get_latest_version_with_http_info(**kwargs)  # noqa: E501
@@ -65,8 +65,8 @@ class VersionsApi(object):
         """get_latest_version  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_latest_version_with_http_info(async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_latest_version_with_http_info(async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -76,7 +76,7 @@ class VersionsApi(object):
         """
 
         all_params = []  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -116,7 +116,7 @@ class VersionsApi(object):
             files=local_var_files,
             response_type='str',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.common.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -127,8 +127,8 @@ class VersionsApi(object):
         """get_versions  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_versions(async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_versions(async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -137,7 +137,7 @@ class VersionsApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.get_versions_with_http_info(**kwargs)  # noqa: E501
         else:
             (data) = self.get_versions_with_http_info(**kwargs)  # noqa: E501
@@ -147,8 +147,8 @@ class VersionsApi(object):
         """get_versions  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_versions_with_http_info(async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.get_versions_with_http_info(async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -158,7 +158,7 @@ class VersionsApi(object):
         """
 
         all_params = []  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -198,7 +198,7 @@ class VersionsApi(object):
             files=local_var_files,
             response_type='Version',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.common.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),

@@ -46,8 +46,8 @@ class AuthenticationApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.login(login, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.login(login, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -57,7 +57,7 @@ class AuthenticationApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.login_with_http_info(login, **kwargs)  # noqa: E501
         else:
             (data) = self.login_with_http_info(login, **kwargs)  # noqa: E501
@@ -68,8 +68,8 @@ class AuthenticationApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.login_with_http_info(login, async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.login_with_http_info(login, async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -80,7 +80,7 @@ class AuthenticationApi(object):
         """
 
         all_params = ['login']  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -130,7 +130,7 @@ class AuthenticationApi(object):
             files=local_var_files,
             response_type='User',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.d6_2.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
@@ -142,8 +142,8 @@ class AuthenticationApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.logout(async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.logout(async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -152,7 +152,7 @@ class AuthenticationApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('async_call'):
             return self.logout_with_http_info(**kwargs)  # noqa: E501
         else:
             (data) = self.logout_with_http_info(**kwargs)  # noqa: E501
@@ -163,8 +163,8 @@ class AuthenticationApi(object):
 
           # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.logout_with_http_info(async=True)
+        asynchronous HTTP request, please pass async_call=True
+        >>> thread = api.logout_with_http_info(async_call=True)
         >>> result = thread.get()
 
         :param async bool
@@ -174,7 +174,7 @@ class AuthenticationApi(object):
         """
 
         all_params = []  # noqa: E501
-        all_params.append('async')
+        all_params.append('async_call')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -218,7 +218,7 @@ class AuthenticationApi(object):
             files=local_var_files,
             response_type='bool',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            async_call=params.get('async_call'),
             model_package="cloudera.director.d6_2.models",
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
